@@ -46,6 +46,7 @@
         -e ME_CONFIG_MONGODB_ADMINUSERNAME=root \
         -e ME_CONFIG_MONGODB_ADMINPASSWORD=pwd1234 \
         -e ME_CONFIG_MONGODB_ENABLE_ADMIN=true \
+        -e ME_CONFIG_MONGODB_URL="mongodb://root:pwd1234@mongodb:27017/" \
         -p 8081:8081 \
         --link mongodb:mongo \
         -d mongo-express
